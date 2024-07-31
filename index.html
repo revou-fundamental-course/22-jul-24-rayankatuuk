@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelGo</title>
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css".css">
   </head>
-  <body></body>
+
+  <body>
+    <!-- NAVBAR  -->
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./">TravelGo</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Home</a></li>
+          <li><a href="#experience">Our Package</a></li>
+          <li><a href="#projects">Call Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="./">TravelGo</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#our-package" onclick="toggleMenu()">Our Package</a></li>
+          <li><a href="#call-us" onclick="toggleMenu()">Call Us</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- javascript -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
