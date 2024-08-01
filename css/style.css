@@ -267,3 +267,38 @@ a:hover {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
+@media screen and (max-width: 600px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .hero-content {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Warna latar belakang semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 0;
+    height: 130px;
+    width: 330px;
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+  }
+}

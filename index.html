@@ -7,7 +7,6 @@
 
     <!-- link css  -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css".css">
   </head>
 
   <body>
@@ -74,15 +73,18 @@
       <div class="container">
         <div class="contact-form">
           <h2>Contact Us</h2>
-          <p>Sales kami akan menghubungi Anda</p>
-          <form>
+          <p>Sales kami akan menghubungi Anda segera!</p>
+          <form
+            id="callus-form"
+            name="callus-form"
+            onsubmit="return validateForm()"
+          >
             <label for="name">Nama Anda</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Masukkan Nama Anda"
-              required
             />
 
             <label for="email">Email</label>
@@ -91,7 +93,6 @@
               id="email"
               name="email"
               placeholder="Masukkan Email Anda"
-              required
             />
 
             <label for="interest">Tertarik untuk</label>
@@ -101,7 +102,7 @@
               <option value="tripgo">TripGo</option>
             </select>
 
-            <button type="submit">Submit</button>
+            <button id="btn-submit" type="submit" value="Submit">Submit</button>
           </form>
         </div>
       </div>

@@ -25,3 +25,21 @@ setInterval(changeBackgroundImage, 4000); // Ganti setiap 3 detik
 window.onload = changeBackgroundImage; // Set gambar awal saat halaman dimuat
 
 // form validation
+function validateForm() {
+  // Get input value
+  const name = document.forms["callus-form"]["name"].value;
+  const email = document.forms["callus-form"]["email"].value;
+  const interest = document.forms["callus-form"]["interest"].value;
+
+  // Validate input
+  if (name == "" || email == "" || interest == "") {
+    // document.getElementById("callus-form");
+    alert("Tidak boleh kosong!");
+    return false;
+  } else {
+    alert("Terima Kasih, Sales kami akan menghubungi Anda!");
+  }
+
+  setSenderUI(name, email, interest);
+  return false;
+}
