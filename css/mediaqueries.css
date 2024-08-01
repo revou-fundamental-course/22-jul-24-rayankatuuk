@@ -1,8 +1,28 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
+  }
+
+  .hero-content {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Warna latar belakang semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 0;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
   }
 }

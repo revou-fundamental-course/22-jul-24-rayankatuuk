@@ -16,9 +16,9 @@
       <div class="logo"><a href="./">TravelGo</a></div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">Home</a></li>
-          <li><a href="#experience">Our Package</a></li>
-          <li><a href="#projects">Call Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#our-package">Our Package</a></li>
+          <li><a href="#call-us">Call Us</a></li>
         </ul>
       </div>
     </nav>
@@ -37,6 +37,75 @@
         </div>
       </div>
     </nav>
+
+    <!-- banner auto slide  -->
+    <section id="home">
+      <div class="hero-banner" id="hero-banner">
+        <div class="hero-content">
+          <h1>TravelGo, Your Trusted Travel Agent's</h1>
+          <p>Your journey starts here</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- main section  -->
+    <section id="our-package">
+      <div class="main-section">
+        <div class="package">
+          <h2>Paket Hemat</h2>
+          <p>Harga:</p>
+          <p class="price">Rp. 1.500.000</p>
+        </div>
+        <div class="package">
+          <h2>Paket Basic</h2>
+          <p>Harga:</p>
+          <p class="price">Rp. 3.500.000</p>
+        </div>
+        <div class="package">
+          <h2>Paket Travel VVIP</h2>
+          <p>Harga:</p>
+          <p class="price">Rp. 5.000.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- form contact us  -->
+    <section id="call-us">
+      <div class="container">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <p>Sales kami akan menghubungi Anda</p>
+          <form>
+            <label for="name">Nama Anda</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukkan Nama Anda"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan Email Anda"
+              required
+            />
+
+            <label for="interest">Tertarik untuk</label>
+            <select id="interest" name="interest" required>
+              <option value="paket-hemat">Paket Hemat</option>
+              <option value="trip-premium">Trip Premium</option>
+              <option value="tripgo">TripGo</option>
+            </select>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- javascript -->
     <script src="./js/script.js"></script>
