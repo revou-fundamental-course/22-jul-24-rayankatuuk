@@ -8,11 +8,10 @@ function toggleMenu() {
 
 // banner auto slide
 const images = [
-  "images/arty-gg0KaRAZ4pQ-unsplash.jpg",
-  "images/johannes-mandle-zllTu_yyJoQ-unsplash.jpg",
-  "images/sebastian-pena-lambarri-U_i6h9Y50wQ-unsplash.jpg",
-  "images/sutirta-budiman-DxmBSgUYKis-unsplash.jpg",
-  "images/wexor-tmg-L-2p8fapOA8-unsplash.jpg",
+  "images/image-1.jpg",
+  "images/image-2.jpg",
+  "images/image-3.jpg",
+  "images/image-4.jpg",
 ];
 let currentIndex = 0;
 
@@ -22,7 +21,7 @@ function changeBackgroundImage() {
   currentIndex = (currentIndex + 1) % images.length;
 }
 
-setInterval(changeBackgroundImage, 3000); // Ganti setiap 3 detik
+setInterval(changeBackgroundImage, 4000); // Ganti setiap 3 detik
 window.onload = changeBackgroundImage; // Set gambar awal saat halaman dimuat
 
 // form validation

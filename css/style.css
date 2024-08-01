@@ -164,7 +164,7 @@ a:hover {
   color: #fff;
   text-align: center;
   object-fit: cover;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 2s ease-in-out;
 }
 
 .hero-content {
@@ -233,11 +233,12 @@ a:hover {
 
 .contact-form {
   background-color: #e5e5e5;
-  padding: 20px;
+  padding: 50px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 62%;
 }
+
 .contact-form h2 {
   margin-bottom: 20px;
 }
